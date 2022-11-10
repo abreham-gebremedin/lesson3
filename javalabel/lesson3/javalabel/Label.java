@@ -10,18 +10,29 @@ public class Label  {
 
     String text;
     int alignment = LEFT;
+    
+    // Create a class constructor for the DateCalendarSamples class with pattern parameter
+//  The constructor is called when an object of a class Label is created(instantiated) on the main method. 
     public Label(String text, int alignment)  {
+//    	the value of local variable "text"  going to be assigned to class level variable "text"
 			this.text = text;
+//			invoke setAlignment method one parameter alignment to assign the class level variable alignment
 			setAlignment(alignment);
     }
     public int getAlignment() {
 			return alignment;
     }
+    
+//  crate setAlignment method
     public String getText() {
+    	 // this line return the value class level variable alignment  .
 		return text;
     }
 
+//  crate setAlignment method
     public synchronized void setAlignment(int alignment) {
+    	
+//    	defining switch statement 
 			switch (alignment) {
 	  			case LEFT:
 	  			case CENTER:
