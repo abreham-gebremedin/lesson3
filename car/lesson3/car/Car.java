@@ -14,7 +14,7 @@ public class Car{
 	public static void main(String[] args) {
 
 //		// Create an object e1 of class Employee (This will call the constructor 
-//		initialized the object and stored on the memory with 2010, "Toyota", "Camry", 15000 )
+//		initialized the object myCar and stored on the memory with 2010, "Toyota", "Camry", 15000 )
 		Car myCar = new Car(2010, "Toyota", "Camry", 15000);
 		
 		//Assignment operator to assign an myCar reference to 
@@ -32,25 +32,27 @@ public class Car{
 	}
 
 	// Create a class constructor for the Car class with empty parameter we can call it default constructor
+//	The constructor is called when an object of a class is created(instantiated) . 
 	public Car(){
 	}
 	// Create a class constructor for the Car class with int carYear, carMake,carModel and carPrice parameter
 	public Car(int carYear, String carMake, String carModel, double carPrice) {
-		super();
-		year = carYear;
+//	 the value of local variables  going to be assigned to class level variables
+ 		year = carYear;
 		make = carMake;
 		model = carModel;
 		price = carPrice;
 	}
-	
+//	
 	//update the price for the car
 	public void updatePrice(double newPrice){
-//		this line return updated price to the caller object.price
+//		this line return updated price to myCar.updatePrice and change the value of caller object.price on the memory
 		price = newPrice;
 	
 	}
 	  //declaring a method named staticMethod()
 	public static int staticMethod(){
+//		this line return 5 to the caller object.price
 		return 5;
 	}
 	  //declaring a method named getYear()

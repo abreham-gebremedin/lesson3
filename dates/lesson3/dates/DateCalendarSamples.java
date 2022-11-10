@@ -2,27 +2,55 @@ package lesson3.dates;
 import java.text.*;
 import java.util.*;
 
+//Create an DateCalendarSamples class
 
 public class DateCalendarSamples {
 
+//	declare class level variable datePattern
+
     String datePattern;
-
+    // Create a class constructor for the DateCalendarSamples class with pattern parameter
+//    The constructor is called when an object of a class is created(instantiated) . 
     public DateCalendarSamples(String pattern) {
+//   	 the value of local variables  going to be assigned to class level variables
         datePattern = pattern;
-
+        
+     // Creating a new Locale with US local time
+     /*A Locale object represents a specific geographical, political,or cultural region.
+      *  An operation that requires a Locale to performits task is called locale-sensitive and uses the Localeto tailor information for the user.
+      *   For example, displaying a numberis a locale-sensitive operation— the number 
+      *   should be formattedaccording to the customs and conventions of the user's native country,region, or culture.*/
         Locale locale = Locale.US;
-
-        SimpleDateFormat formatter = new SimpleDateFormat(datePattern,locale);
-
+/*      The java.text.SimpleDateFormat class provides methods to format and parse date and time in java. 
+        The SimpleDateFormat is a concrete class for formatting and parsing date which inherits java.text.DateFormat class.
+        Notice that formatting means converting date to string and parsing means converting string to date.
+        Instantiates the SimpleDateFormat class using the provided pattern and For the provided FORMAT Locale*/
+        
+        SimpleDateFormat formatter = new SimpleDateFormat(datePattern,locale); 
+//DateFormat is used for formatting a date into String based on specific locale that is provided as input. 
+//        formatter.format(new Date()); format the current date and assign to String dateString 
         String dateString = formatter.format(new Date());
+//       print the output like e.g Today's date: 11-10-22
         System.out.println("Today's date: " + dateString);
 
-    }
+    } // end of constructor DateCalendarSamples(String pattern) 
+    
+//    main() method
     public static void main(String [] args) {
+    	
+//    	Create anonymous object   of class DateCalendarSamples (This will call the constructor DateCalendarSamples("MM-dd-yy")
+//		initialized the anonymous object and stored on the memory with pattern ("MM-dd-yy"))
         new DateCalendarSamples("MM-dd-yy");
+        
+//    	Create dm object   of class DateCalendarSamples (This will call the constructor DateCalendarSamples("MM-dd-yy")
+//		initialized the dm object and stored on the memory with pattern ("MM-dd-yy"))
         DateCalendarSamples dm = new DateCalendarSamples("M-dd-yy");
+        
+        // invoke fromSlides() method to print date MM/dd/yy and "yyyy/MM/dd" format on line 57
         dm.fromSlides();
+        // invoke testConversion() on line 102
         dm.testConversion();
+        // invoke testCalendar() on line 85
         dm.testCalendar();
     } 
     
