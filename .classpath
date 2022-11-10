@@ -6,6 +6,15 @@
 	<classpathentry kind="src" path="immutable"/>
 	<classpathentry kind="src" path="javalabel"/>
 	<classpathentry kind="src" path="employee"/>
+	<classpathentry kind="src" path="callbyvalueorreference"/>
+	<classpathentry kind="src" path="labelwithenums"/>
+	<classpathentry kind="src" path="myenums"/>
+	<classpathentry kind="src" path="objectdemo"/>
+	<classpathentry kind="src" path="orderofexec"/>
+	<classpathentry kind="src" path="staticvble"/>
+	<classpathentry kind="src" path="stringinterning"/>
+	<classpathentry kind="src" path="thiskeyword"/>
+	<classpathentry kind="src" path="uninitializedlocal"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

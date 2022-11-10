@@ -1,14 +1,20 @@
 package lesson3.car;
 
+
+// Create an Car class
 public class Car{
 
+//	declare class level variables year,make,model and price
 	private int year;
 	private String make;
 	private String model;
 	private double price;
 
+//	main() method  
 	public static void main(String[] args) {
 
+//		// Create an object e1 of class Employee (This will call the constructor 
+//		intialized the object and stored on the memory with 2010, "Toyota", "Camry", 15000 )
 		Car myCar = new Car(2010, "Toyota", "Camry", 15000);
 		Car myOtherCar = myCar;
 		myCar.updatePrice(12000);
