@@ -10,6 +10,7 @@ import java.util.Locale;
 
 public class LocalDateSamples {
 	public static void main(String[] args) {
+//		print dates
 		System.out.println("Today's date: " + LocalDate.now());
 		System.out.println("Today's date MM/dd/yyyy: " + localDateAsString(LocalDate.now()));
 		System.out.println("Specified date: " + LocalDate.of(2000, 1, 1));

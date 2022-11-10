@@ -1,7 +1,9 @@
 //source code from the jdk
 package lesson3.javalabel;
-
+//Java program to illustrate the behavior of
 public class Label  {
+//	Declaring them as static final will help you to create a CONSTANT. Only one copy of variable exists which can’t be reinitialize.
+	// static final  variable
     public static final int LEFT 	= 0;
     public static final int CENTER 	= 1;
     public static final int RIGHT 	= 2;
@@ -59,7 +61,10 @@ public class Label  {
     	//try creating a second label to see object reference effect
     	Label l = new Label("Hello", LEFT);
     	Label another = l;
+    	
+//    	invoke setText method to set "Goodbye" to class level variable
     	another.setText("Goodbye");
+//    	invoke getText method to get the value of class level variable text and print it on screen
     	System.out.println(another.getText());
 //    	
     	

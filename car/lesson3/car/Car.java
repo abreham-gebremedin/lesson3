@@ -17,7 +17,7 @@ public class Car{
 //		initialized the object myCar and stored on the memory with 2010, "Toyota", "Camry", 15000 )
 		Car myCar = new Car(2010, "Toyota", "Camry", 15000);
 		
-		//Assignment operator to assign an myCar reference to 
+		//Assignment operator to assign a myCar reference to 
 		//myOtherCar reference variable then it will point to the same address location
 		Car myOtherCar = myCar;
 		
