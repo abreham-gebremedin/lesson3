@@ -21,6 +21,7 @@ public class Employee {
 	}
 
 	// instance methods
+	
 	public String getName() {
 		return name;
 	}

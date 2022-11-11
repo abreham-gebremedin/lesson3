@@ -9,7 +9,6 @@ public class Employee {
 	private String nickName;
 	private double salary;
 	private Date hireDay;
-
 	// constructor
 	Employee(String aName, String aNickName, double aSalary, int aYear,
 			int aMonth, int aDay) {
@@ -37,7 +36,6 @@ public class Employee {
 	public Date getHireDay() {
 		return (Date)hireDay.clone();
 	}
-	
 	//From Advanced Employee example
 	public void raiseSalary(double byPercent) {
 		double raise = salary * byPercent / 100;

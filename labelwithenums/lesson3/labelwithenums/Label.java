@@ -3,7 +3,6 @@ package lesson3.labelwithenums;
 
 
 public class Label  {
-
     String text;
     Alignment alignment;
    

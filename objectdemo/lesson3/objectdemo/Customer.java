@@ -9,7 +9,6 @@ package lesson3.objectdemo;
 public class Customer {
 	private String name;
 	private Account checkingAccount;
-	
 	public Customer(String name) {
 		this.name = name;
 	}
@@ -17,7 +16,6 @@ public class Customer {
 	public String getName() {
 		return name;
 	}
-	
 	/**
 	 * Creates a new checking account and stores it in
 	 * the checkingAccount variable.

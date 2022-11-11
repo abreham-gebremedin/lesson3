@@ -1,7 +1,6 @@
 package lesson3.myenums;
 
 
-
 public abstract class MyEnum2 {
 	public static MyEnum2 FIRST = new First(3);
 	

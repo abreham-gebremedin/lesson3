@@ -1,7 +1,6 @@
 package lesson3.employee.rogue;
 
 import java.util.Date;
-
 public class Rogue {
 	public static void main(String[] args) {
 		
